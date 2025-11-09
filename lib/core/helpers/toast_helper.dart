@@ -5,13 +5,13 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:toastification/toastification.dart';
 
 class ToastHelper {
-  static success(String message) {
+  static success(String message, ) {
     toastification.show(
       context: Get.context!,
       type: ToastificationType.success,
       showIcon: true,
       title: Text(message),
-      autoCloseDuration: const Duration(seconds: 2),
+      autoCloseDuration: Duration(seconds: 2),
     );
   }
 
